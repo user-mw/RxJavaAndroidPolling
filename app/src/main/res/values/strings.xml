@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RxJavaAndroidPolling</string>
+    <string name="perform_polling_text">Perform polling</string>
+    <string name="polling_title">Polling screen</string>
 </resources>
