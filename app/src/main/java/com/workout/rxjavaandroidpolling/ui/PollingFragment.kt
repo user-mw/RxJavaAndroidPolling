@@ -43,4 +43,9 @@ class PollingFragment : Fragment() {
             loadingText.isVisible = loading
         }
     }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        viewModel.clearCompositeDisposable()
+    }
 }
