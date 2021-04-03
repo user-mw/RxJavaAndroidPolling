@@ -3,7 +3,7 @@ package com.workout.rxjavaandroidpolling.presentation
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.workout.rxjavaandroidpolling.domain.RoughPollingUseCase
+import com.workout.rxjavaandroidpolling.domain.SecondPollingUseCase
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.rxkotlin.addTo
@@ -16,7 +16,7 @@ class PollingViewModel : ViewModel() {
 
     private val compositeDisposable = CompositeDisposable()
 
-    private val useCase = RoughPollingUseCase()
+    private val useCase = SecondPollingUseCase()
 
     private val _pollingValue = MutableLiveData<String>()
     val pollingValue: LiveData<String> = _pollingValue
